@@ -1,0 +1,43 @@
+{
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ]
+    },
+    "lib": ["ESNext"],
+    "sourceMap": true,
+    "module": "CommonJS",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "allowJs": true,
+    "noEmitOnError": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "declaration": true,
+  }
+}
