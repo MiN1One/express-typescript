@@ -44,7 +44,7 @@ module.exports = (_, argv) => ({
       systemvars: true,
     }),
     new webpack.DefinePlugin({
-      'process.env': argv.mode
+      'process.env': JSON.stringify(argv.mode)
     }),
     new TypescriptDeclarationPlugin()
   ]
